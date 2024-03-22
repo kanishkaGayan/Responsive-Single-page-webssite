@@ -13,9 +13,9 @@
 <body>
     <div class="container-fluid bg-dark">
 
-        <div class="collapse bg-dark fixed-top" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <div class="collapse bg-dark fixed-top nav-bar-mob" id="navbarToggleExternalContent" data-bs-theme="dark">
             <div class="bg-dark p-4">
-                <ul class="navbar-nav fw-bold nav-bar-mob">
+                <ul class="navbar-nav fw-bold mob-nav-items text-light">
                     <li class="nav-item"><a href="#home" class="nav-link mx-3 fs-6 active">Home</a></li>
                     <li class="nav-item"><a href="#about" class="nav-link mx-3 fs-6">About</a></li>
                     <li class="nav-item"><a href="#services" class="nav-link mx-3 fs-6">Services</a></li>
@@ -24,28 +24,31 @@
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top top-nav-bar">
-            <a href="index.html" class="navbar-brand" id="logo">SiteLogo</a>
+        <div class="nav-dummy">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
- 
-            <div class="collapse navbar-collapse justify-content-end" id="nav-links">
-                <ul class="navbar-nav fw-bold">
-                    <li class="nav-item"><a href="#home" class="nav-link mx-3 fs-6 active">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link mx-3 fs-6">About</a></li>
-                    <li class="nav-item"><a href="#services" class="nav-link mx-3 fs-6">Services</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link mx-3 fs-6">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top top-nav-bar">
+                <a href="index.html" class="navbar-brand" id="logo">SiteLogo</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse justify-content-end" id="nav-links">
+                    <ul class="navbar-nav fw-bold">
+                        <li class="nav-item"><a href="#home" class="nav-link mx-3 fs-6 active">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link mx-3 fs-6">About</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link mx-3 fs-6">Services</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link mx-3 fs-6">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div><!-- dummy nav -->
 
     </div><!-- main container-->
     
     <div class=" content">
 
-        <a class="btn btn-lg z-3 btn-primary position-fixed bottom-0 end-0 m-2" href="https://wa.me/94756512541">
+        <a class="btn btn-lg z-3 btn-primary position-fixed bottom-0 end-0 mb-4 mx-3" href="https://wa.me/94756512541">
             <i class="fa-solid fa-message"></i>
         </a>
         
@@ -218,7 +221,7 @@
                                 <div class="subscription-boy mt-2">
                                     <form>
                                         <input type="text" class="form-control form-control-sm col-12" placeholder="Email">
-                                        <button class="btn btn-sm btn-danger col-12 mt-1" type="button">Subscribe</button>
+                                        <button class="btn btn-sm btn-danger col-12 mt-1 disabled" type="button">Subscribe</button>
                                     </form>
                                 </div>
                             </div>
@@ -227,17 +230,17 @@
                             <div class="card bg-dark border-0 text-light text-center p-4">
                                 <h4 class="text-uppercase">Follow Us</h4>
                                 <p class="mt-3">
-                                    <a class="text-decoration-none text-light" href="#">
+                                    <a class="text-decoration-none text-light" href="https://web.facebook.com/cuet.lk">
                                         <i class="fa-brands text-light fa-facebook"></i> : Facebook
                                     </a>
                                 </p>
-                                <p>
+                                <!-- <p>
                                     <a class="text-decoration-none text-light" href="#">
                                         <i class="fa-brands text-light fa-youtube"></i> : Youtube
                                     </a>
-                                </p>
+                                </p> -->
                                 <p>
-                                    <a class="text-decoration-none text-light" href="#">
+                                    <a class="text-decoration-none text-light" href="https://wa.me/94756512541">
                                         <i class="fa-brands text-light fa-whatsapp"></i> : Whatsapp
                                     </a>
                                 </p>
@@ -247,11 +250,11 @@
                         <div class="col-sm-6 col-md-3 p-1">
                             <div class="card bg-dark border-0 text-light text-center p-4 footer-cata">
                                 <h4 class="text-uppercase text-light">CATEGORIES</h4>
-                                <a class="text-decoration-none text-light" href="#">Ui/Ux Design</a>
-                                <a class="text-decoration-none text-light" href="#">Responsive Web Design</a>
-                                <a class="text-decoration-none text-light" href="#">Mobile application development</a>
-                                <a class="text-decoration-none text-light" href="#">Dekstop application design</a>
-                                <a class="text-decoration-none text-light" href="#">Iot application design</a>
+                                <a class="text-decoration-none text-light" href="#services">Ui/Ux Design</a>
+                                <a class="text-decoration-none text-light" href="#services">Responsive Web Design</a>
+                                <a class="text-decoration-none text-light" href="#services">Mobile application development</a>
+                                <a class="text-decoration-none text-light" href="#services">Dekstop application design</a>
+                                <a class="text-decoration-none text-light" href="#services">Iot application design</a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-3 p-1">
@@ -269,7 +272,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 p-2">
-                            <p class="text-center text-dark mt-2 text-white">Copyright 2024 <span class="text-primary">Site Name </span> Design <span class="text-primary">Cuet.lk</span></p>
+                            <p class="text-center mt-2 text-white">Powerd By&nbsp;<span class="text-primary"><a class="text-decoration-none" href="https://web.facebook.com/cuet.lk">Cuet.lk</a></span></p>
                         </div>
                     </div>
                 </div>
@@ -288,14 +291,7 @@
     <script src="js/jquery.lazyload.min.js"></script>
 
 
-    <script>
-		$(function(){
-			$('img.lazy').lazyload({
-				effect: "fadeIn"
-			});
-		});
-
-	</script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
